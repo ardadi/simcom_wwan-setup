@@ -260,3 +260,13 @@ It's recommended that you clone the repo locally on the Jetson Nano.
 ### Test the changes
 
 1. `$ sudo reboot`
+
+
+### Static IP APN settings
+### minicom or atcom may be crash use AT.py
+
+1. cd ~/SIM7600X_4G_for_JETSON_NANO/AT/
+1. sudo python3 AT.py
+1. AT+CGDCONT=1,"IP","mgbs" #APN for TURKCELL in Turkiye
+2. ATD*99***1#
+
